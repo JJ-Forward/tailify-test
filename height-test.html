@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style type="text/css">
+	body{padding: 0px;}
+	#kittie-container{
+		position: relative;
+		width: 100%;
+	}
+	.kittie-pics{
+		position: relative;
+		float: left;
+		width: 20%;
+		height: auto;
+		margin:20px;
+	}
+	.kittie-pics a{
+		position: relative;
+		float: left;
+	}
+	.kittie-pics img{
+		width: 100%;
+		height: auto;
+	}
+</style>
+</head>
+<body>
+
+<div id="kittie-container" ng-controller="kittieCtrl"> 
+	  <div class="kittie-pics" ng-repeat="x in myData">
+	  <img ng-src="https://devtest.tailify.com/{{ x.path }}"> 
+	  <button ng-click="SendData()">Upload</button>
+	  </div>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('kittieCtrl', function($scope, $http) {
+
+  $http.get("https://devtest.tailify.com/api/list/").then(function (response) {
+      $scope.myData = response.data;
+  });
+
+  $scope.sendData = function() {
+    $http.post("https://devtest.tailify.com/api/upload/").then(function(response){
+  		$scope.newData = response.data;
+  		$window.alert(sendData);
+		console.log(sendData);
+  	});
+  };
+
+});
+</script>
+
+</body>
+</html>
