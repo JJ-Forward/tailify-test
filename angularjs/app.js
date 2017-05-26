@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('socialApp', ['ui.router', 'total-total', 'country-total', 'gender-total', 'age-total', ]);
+  var app = angular.module('socialApp', ['ui.router', 'total-total', 'country-total', 'gender-total', 'age-total', 'engagement' ]);
 
   app.config(function($stateProvider, $urlRouterProvider){
       
@@ -44,6 +44,15 @@
             	}
             }
         })
+
+        .state('engagement',{
+        	url: "engagement",
+        	views:{
+        		'engagement-view':{
+        			templateUrl: "/tailify-test/blob/master/modules/engageCalender-mod.htm",
+        		}
+        	}
+        });
 
     });
 
