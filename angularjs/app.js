@@ -11,7 +11,7 @@
             url: "/total",
             views:{
             	'followers-view':{
-            		templateUrl: "/JJ-Forward/tailify-test/master/modules/total-mod.htm",
+            		templateUrl: "modules/total-mod.htm",
             	}
             }
         })
