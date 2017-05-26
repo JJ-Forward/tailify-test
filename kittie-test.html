@@ -42,14 +42,6 @@ app.controller('kittieCtrl', function($scope, $http) {
       $scope.myData = response.data;
   });
 
-  $scope.sendData = function() {
-    $http.post("https://devtest.tailify.com/api/upload/").then(function(response){
-  		$scope.newData = response.data;
-  		$window.alert(sendData);
-		console.log(sendData);
-  	});
-  };
-
 });
 </script>
 
