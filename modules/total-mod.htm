@@ -1,0 +1,11 @@
+<div class="mod-container" ng-controller="totalController as max">
+	<!--<h3>Total followers</h3>-->
+	<div class="total-block">
+		<div class="total" ng-repeat="totals in max.total">
+			<h2>Total Reach: {{totals.totalReach}}</h2>
+			<h2>Total Posts: {{totals.totalPosts}}</h2>
+			<h2>Total Influencers: {{totals.totalInfluences}}</h2>
+		</div>
+
+	</div>
+</div>

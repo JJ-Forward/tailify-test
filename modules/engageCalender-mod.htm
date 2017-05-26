@@ -1,0 +1,14 @@
+<div class="mod-container" ng-controller="engageController as engageList">
+
+	<div class="calender-block">
+		<h2>Month of May</h2>
+		<div class="date-window" ng-repeat="engage in engageList.engage" ng-click="dayButton(engage.idName)"><p>{{engage.day}}</p></div>	
+	</div>
+
+	<div class="date-info"  ng-repeat="engage in engageList.engage | filter:idName | limitTo: 1">
+		<h3>{{engage.day}} of May</h3>
+		<p>Likes: {{engage.likes}}</p>
+		<p>Comments: {{engage.comments}}</p>
+	</div>
+			
+</div>

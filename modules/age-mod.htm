@@ -1,0 +1,17 @@
+<div class="mod-container" ng-controller="ageController as ageRange">
+	<h3>Followers by age</h3>
+	<div class="graph-block">
+		<div class="graph-bar" ng-repeat="age in ageRange.ages">
+			<div class="bar" ng-style="{'background-color': age.label, height: age.percentage}"></div>
+		</div>
+
+	</div>
+
+	<div class="legend">
+		<h3>Legend:</h3>
+		<div class="legend-names" ng-repeat="age in ageRange.ages">
+			<span ng-style="{background: age.label}"></span>
+			<h4>{{age.name}} - {{age.followers}}</h4>
+		</div>
+	</div>
+</div>

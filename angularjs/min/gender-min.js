@@ -1,0 +1,1 @@
+!function(){var e=angular.module("gender-total",[]);e.controller("genderController",[function(){this.genders=l}]);var l=[{name:"Male",followers:"29%",percentage:"29%",label:"#7b8ecf"},{name:"Female",followers:"71%",percentage:"71%",label:"#ed008e"}]}();

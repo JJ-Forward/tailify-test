@@ -1,0 +1,154 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background: #333;
+}
+article{
+	position: relative;
+	width: 100%;
+	height: auto;
+	font-family: sans-serif;
+	color: #555;
+}
+h1, h2, h3, h4{
+	font-weight: normal;
+}
+h1{
+	font-size: 2em;
+	margin: 30px 0px;
+}
+#profile{
+	position: fixed;
+	width: 20%;
+	height: 100vh;
+	padding: 5%;
+	background: #333;
+	color: white;
+}
+.hero{
+	border-radius: 100px 50px;
+	width: 90%;
+	height: auto;
+}
+#campaign{
+	position: relative;
+	float: right;
+	width: 70%;
+	height: auto;
+	padding: 0px 0px 40px;
+	background: #fefefe;
+}
+#campaign h1{
+	text-align: center;
+}
+.followers-block{
+	position: relative;
+	width: 90%;
+	float: left;
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 20px 5%;
+}
+.followers-nav{
+	position: relative;
+	width: 100%;
+	float: left;
+}
+.follow-type{
+	display: inline-block;
+	width: 15%;
+	margin: 0px 2.5%;
+	cursor: pointer;
+	color: #555;
+	text-decoration: none;
+	text-align: center;
+}
+.follow-type img{
+	width: 60%;
+	border: 1px solid #eee;
+}
+.follow-type h3{
+	margin: 5px 0px;
+}
+.mod-container{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.total-block{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-top: 50px;
+	height: 250px;
+}
+.graph-block{
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 300px;
+	border: 1px solid #333;
+	background: white;
+	margin: 20px 0px;
+}
+.graph-bar{
+	position: relative;
+	float: left;
+	width: 35px;
+	height: 100%;
+	margin: 0px 10px;
+}
+.bar{
+	position: absolute;
+	bottom: 0px;
+	height: 10px;
+	width: 100%;
+
+}
+
+.legend{
+	position: relative;
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+}
+.legend-names{
+	position: relative;
+}
+.legend-names span{
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: red;
+	margin-right: 10px;
+}
+
+#engagement-block{
+	position: relative;
+	float: left;
+	width: 90%;
+	padding: 0px 5%;
+}
+
+.calender-block{
+	position: relative;
+	float: left;
+	width: 50%;
+	border: 1px solid #555;
+	padding: 0px 5% 20px;
+}
+.date-window{
+	position: relative;
+	float: left;
+	width: 20%;
+	margin: 2%;
+	border: 1px solid #555;
+	text-align: center;
+	cursor: pointer;
+}
+.date-info{
+	position: relative;
+	float: left;
+	margin-left: 5%;
+}

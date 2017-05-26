@@ -1,0 +1,17 @@
+<div class="mod-container" ng-controller="genderController as genderList">
+	<h3>Followers by gender</h3>
+	<div class="graph-block">
+		<div class="graph-bar" ng-repeat="gender in genderList.genders">
+			<div class="bar" ng-style="{'background-color': gender.label, height: gender.percentage}"></div>
+		</div>
+
+	</div>
+
+	<div class="legend">
+		<h3>Legend:</h3>
+		<div class="legend-names" ng-repeat="gender in genderList.genders">
+			<span ng-style="{background: gender.label}"></span>
+			<h4>{{gender.name}} - {{gender.followers}}</h4>
+		</div>
+	</div>
+</div>

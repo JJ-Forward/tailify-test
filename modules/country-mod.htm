@@ -1,0 +1,17 @@
+<div class="mod-container" ng-controller="countryController as place">
+	<h3>Followers by country</h3>
+	<div class="graph-block">
+		<div class="graph-bar" ng-repeat="country in place.regions">
+			<div class="bar" ng-style="{'background-color': country.label, height: country.percentage}"></div>
+		</div>
+
+	</div>
+
+	<div class="legend">
+		<h3>Legend:</h3>
+		<div class="legend-names" ng-repeat="country in place.regions">
+			<span ng-style="{background: country.label}"></span>
+			<h4>{{country.name}} - {{country.followers}}</h4>
+		</div>
+	</div>
+</div>

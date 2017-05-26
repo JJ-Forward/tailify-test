@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="socialApp">
+<head>
+	<meta charset="utf-8">
+	<title>Tailify Test</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script type="text/javascript" src="angularjs/app.js"></script>
+	<script type="text/javascript" src="angularjs/total.js"></script>
+	<script type="text/javascript" src="angularjs/country.js"></script>
+	<script type="text/javascript" src="angularjs/gender.js"></script>
+	<script type="text/javascript" src="angularjs/age.js"></script>
+	<script type="text/javascript" src="angularjs/engagement.js"></script>
+</head>
+
+<body>
+
+<article>
+
+	<section id="profile">
+		<h1>Lea Seydoux</h1>
+		<img class="hero" src="images/lea.jpg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec odio a velit posuere malesuada vitae at magna. Suspendisse ultricies.</p>
+	</section>
+
+	<section id="campaign">
+		<h1>Campaign Report</h1>
+
+		<div class="followers-block">
+
+			<h2>Followers</h2>
+			<div class="follower-nav">
+				<a ui-sref="total" class="follow-type"><img src="images/total-icon.jpg"><h3>Total</h3></a>
+				<a ui-sref="country" class="follow-type"><img src="images/country-icon.jpg"><h3>Country</h3></a>
+				<a ui-sref="gender" class="follow-type"><img src="images/gender-icon.jpg"><h3>Gender</h3></a>
+				<a ui-sref="age"class="follow-type"><img src="images/age-icon.jpg"><h3>Age</h3></a>
+			</div>
+
+			<div ui-view="followers-view"></div>
+
+		</div>
+
+		<div id="engagement-block">
+			<h2>Engagement</h2>
+			<div ui-view="engagement-view"></div>
+
+			<div class="mod-container" ng-controller="engageController as engageList">
+
+				<div class="calender-block">
+					<h3>May campaign dates</h3>
+					<div class="date-window" ng-click="dayButton(engage.idName)" ng-repeat="engage in engageList.engage"><p>{{engage.day}}</p></div>	
+				</div>
+
+				<div class="date-info"  ng-repeat="engage in engageList.engage | filter:id | limitTo: 1">
+					<h3>{{engage.day}} of May</h3>
+					<p>Likes: {{engage.likes}}</p>
+					<p>Comments: {{engage.comments}}</p>
+				</div>
+						
+			</div>
+
+		</div>
+
+	</section>
+
+</article>
+	
+</body>
+</html>

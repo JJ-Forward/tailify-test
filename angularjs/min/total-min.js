@@ -1,0 +1,1 @@
+!function(){var t=angular.module("total-total",[]);t.controller("totalController",[function(){this.total=o}]);var o=[{totalReach:"1,890,091",totalPosts:"6",totalInfluences:"3"}]}();
