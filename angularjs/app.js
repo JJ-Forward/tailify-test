@@ -4,7 +4,7 @@
   app.config(function($stateProvider, $urlRouterProvider){
       
       // For any unmatched url, send to /home
-      //$urlRouterProvider.otherwise("total");
+      $urlRouterProvider.otherwise("total");
       
       $stateProvider
       	.state('total', {
