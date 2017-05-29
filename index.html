@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<title>Tailify Test</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script type="text/javascript" src="angularjs/min/angular.min.js"></script>
+	<script type="text/javascript" src="angularjs/min/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="angularjs/app.js"></script>
-	<script type="text/javascript" src="angularjs/min/total-min.js"></script>
-	<script type="text/javascript" src="angularjs/min/country-min.js"></script>
-	<script type="text/javascript" src="angularjs/min/gender-min.js"></script>
-	<script type="text/javascript" src="angularjs/min/age-min.js"></script>
-	<script type="text/javascript" src="angularjs/min/engagement-min.js"></script>
+	<script type="text/javascript" src="angularjs/total.js"></script>
+	<script type="text/javascript" src="angularjs/country.js"></script>
+	<script type="text/javascript" src="angularjs/gender.js"></script>
+	<script type="text/javascript" src="angularjs/age.js"></script>
+	<script type="text/javascript" src="angularjs/engagement.js"></script>
 </head>
 
 <body>
@@ -43,12 +43,11 @@
 
 		<div id="engagement-block">
 			<h2>Engagement</h2>
-			<div ui-view="engagement-view"></div>
 
 			<div class="mod-container" ng-controller="engageController as engageList">
 
 				<div class="calender-block">
-					<h3>May campaign dates</h3>
+					<div class="header"><h3>May campaign</h3></div>
 					<div class="date-window" ng-click="dayButton(engage.idName)" ng-repeat="engage in engageList.engage"><p>{{engage.day}}</p></div>	
 				</div>
 

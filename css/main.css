@@ -8,7 +8,7 @@ article{
 	width: 100%;
 	height: auto;
 	font-family: sans-serif;
-	color: #555;
+	color: #003366;
 }
 h1, h2, h3, h4{
 	font-weight: normal;
@@ -22,7 +22,6 @@ h1{
 	width: 20%;
 	height: 100vh;
 	padding: 5%;
-	background: #333;
 	color: white;
 }
 .hero{
@@ -49,22 +48,23 @@ h1{
 	background: #fff;
 	padding: 20px 5%;
 }
-.followers-nav{
+.follower-nav{
 	position: relative;
 	width: 100%;
 	float: left;
+	margin-bottom: 20px;
 }
 .follow-type{
 	display: inline-block;
-	width: 15%;
-	margin: 0px 2.5%;
+	width: 8%;
+	margin-right: 8%;
 	cursor: pointer;
 	color: #555;
 	text-decoration: none;
 	text-align: center;
 }
 .follow-type img{
-	width: 60%;
+	width: 100%;
 	border: 1px solid #eee;
 }
 .follow-type h3{
@@ -87,7 +87,7 @@ h1{
 	float: left;
 	width: 50%;
 	height: 300px;
-	border: 1px solid #333;
+	border: 2px solid #555;
 	background: white;
 	margin: 20px 0px;
 }
@@ -135,8 +135,23 @@ h1{
 	position: relative;
 	float: left;
 	width: 50%;
-	border: 1px solid #555;
-	padding: 0px 5% 20px;
+	border: 2px solid #555;
+	border-radius: 30px;
+	padding: 0px 0% 20px;
+}
+.calender-block .header{
+	position: relative;
+	float: left;
+	width: 100%;
+	background:red;
+	color: white;
+	text-align: center;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	margin-bottom: 20px;
+}
+.calender-block .header h3{
+	text-transform: uppercase;
 }
 .date-window{
 	position: relative;
@@ -144,6 +159,7 @@ h1{
 	width: 20%;
 	margin: 2%;
 	border: 1px solid #555;
+	border-radius: 10px;
 	text-align: center;
 	cursor: pointer;
 }

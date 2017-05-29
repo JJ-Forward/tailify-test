@@ -29,10 +29,11 @@
 
 <div id="kittie-container" ng-controller="kittieCtrl"> 
 	  <div class="kittie-pics" ng-repeat="x in myData">
-	  <img ng-src="https://devtest.tailify.com/{{ x.path }}"> 
-	  <button ng-click="SendData()">Upload</button>
+	 	 <img ng-src="https://devtest.tailify.com/{{ x.path }}"> 
+	 	 <button ng-click="SendData(x.path)">Upload</button>
 	  </div>
 </div>
+
 
 <script>
 var app = angular.module('myApp', []);
@@ -41,6 +42,13 @@ app.controller('kittieCtrl', function($scope, $http) {
   $http.get("https://devtest.tailify.com/api/list/").then(function (response) {
       $scope.myData = response.data;
   });
+
+  $scope.SendData = function(request){
+	  $http.post("https://devtest.tailify.com/api/upload/", request).then(function(){
+	  		$scope.postData = request;
+	  });
+	};
+
 
 });
 </script>
