@@ -19,6 +19,8 @@ ANGULARJS: The AngularJS framework can be downloaded from https://angularjs.org/
 UI ROUTER: UI router can be downloaded from https://github.com/angular-ui/ui-router the CDN can be accessed via https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js
 ```
 
+* [Working example](http://jermainejohnson.co.uk/TAILIFY-TEST/#!/total) - live example link for assistance
+
 
 ## Built With
 
