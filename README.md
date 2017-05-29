@@ -8,7 +8,7 @@ The campaign (index.html) and kittie page (kittie-test.html) are both built usin
 
 ### Prerequisites
 
-To get the pages running locally download all files and folders, for more information and CDN options for AngularJS and UI router details are below.
+To get the pages running locally download all files and folders and run on a local test server (UI router will not work without) for more information and CDN options for AngularJS and UI router details are below.
 
 
 ```
@@ -24,6 +24,7 @@ UI ROUTER: UI router can be downloaded from https://github.com/angular-ui/ui-rou
 
 * [AngularJS](https://angularjs.org/) - The JS framework used
 * [UIRouter](https://github.com/angular-ui/ui-router) - The de-facto solution to flexible routing with nested views in AngularJS
+* [CodeKit](https://codekitapp.com/) - Local test server
  
 
 ## Authors
