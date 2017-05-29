@@ -11,7 +11,7 @@
             url: "/total",
             views:{
             	'followers-view':{
-            		templateUrl: "JJ-Forward/tailify-test/modules/total-mod.htm",
+            		templateUrl: "modules/total-mod.htm",
             	}
             }
         })
@@ -20,7 +20,7 @@
             url: "/country",
             views:{
             	'followers-view':{
-            		templateUrl: "JJ-Forward/tailify-test/modules/country-mod.htm",
+            		templateUrl: "modules/country-mod.htm",
             	}
             }
         })
@@ -30,7 +30,7 @@
             
             views:{
             	'followers-view':{
-            		templateUrl: "JJ-Forward/tailify-test/modules/gender-mod.htm",
+            		templateUrl: "modules/gender-mod.htm",
             	}
             }
         })
@@ -40,7 +40,7 @@
             
             views:{
             	'followers-view':{
-            		templateUrl: "JJ-Forward/tailify-test/modules/age-mod.htm",
+            		templateUrl: "modules/age-mod.htm",
             	}
             }
         })
@@ -49,7 +49,7 @@
         	url: "engagement",
         	views:{
         		'engagement-view':{
-        			templateUrl: "JJ-Forward/tailify-test/modules/engageCalender-mod.htm",
+        			templateUrl: "modules/engageCalender-mod.htm",
         		}
         	}
         });
