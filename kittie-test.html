@@ -47,6 +47,7 @@ app.controller('kittieCtrl', function($scope, $http) {
 	  $http.post("https://devtest.tailify.com/api/upload/", request).then(function(){
 	  		$scope.postData = request;
 	  });
+	  alert("You have uploaded " + request + " file!");
 	};
 
 
